@@ -1,0 +1,15 @@
+<aura:component controller="HierarchyController" implements="flexipage:availableForAllPageTypes" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="items" type="Object"/>
+    <!--Lightning Tree-->
+    <Lightning:card title="" >
+        <div class="slds-m-around_xx-large">
+            <lightning:tree items="{!v.items}" onselect="{!c.handleSelect}" header="Account and Contacts"/>
+        </div>
+
+        <!--Lightning Spinner-->
+        <div>
+            <lightning:spinner alternativeText="Processing.." title="Processing.." aura:id="spnr" variant="brand" size="large" />
+        </div>
+    </Lightning:card>
+</aura:component>
