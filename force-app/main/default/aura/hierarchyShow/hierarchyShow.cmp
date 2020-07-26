@@ -7,7 +7,7 @@
             <lightning:tree items="{!v.items}" onselect="{!c.handleSelect}" header="Account and Contacts"/>
         </div>
 
-        <!--Lightning Spinner-->
+        <!--Lightning Spinner Test-->
         <div>
             <lightning:spinner alternativeText="Processing.." title="Processing.." aura:id="spnr" variant="brand" size="large" />
         </div>
