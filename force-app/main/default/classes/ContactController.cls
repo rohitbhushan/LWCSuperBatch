@@ -1,3 +1,4 @@
+@isTest
 public with sharing class ContactController {
    
     @AuraEnabled(cacheable = true)
@@ -7,4 +8,5 @@ public with sharing class ContactController {
         */
        throw new AuraHandledException('Forced error');
     }
+    // test again comments again test me 
 }
